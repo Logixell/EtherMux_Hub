@@ -17,13 +17,17 @@ A **low‑latency MAC** is implemented in an **FPGA** , providing deterministic 
 The board follows the **Raspberry Pi form factor** and is fully **HAT+ compliant** , ensuring mechanical and electrical compatibility with the broader ecosystem. An onboard header supports an **SSD1306‑compatible OLED display** for runtime diagnostics and system status.
 
 Control and protocol execution are handled by a **Raspberry Pi RP2350 microcontroller** , paired with **16 MB of external flash** , providing ample capacity for firmware, protocol stacks, and application‑level features.
+## Software
+The Ethermux code resides in the EtherMux repository [/logixell/Ethermux](https://github.com/Logixell/EtherMux/tree/main)  
+This includes the Software that runs on the RP2350 microcontroller as well as the FPGA configuration binarys.  Documentation and FPGA datasheet will also reside there.
+
 
 ## Design files
 The full design is available in the release section.  The release section includes all binary files required to reproduce this board including a Fusion360 project file, Step file, Gerbers, BOM etc.
 
 ## Ordering
 At the time of writing, this board is not available through any commercial distributors. You will need to have it fabricated and assembled yourself. The design is optimized for JLCPCB’s manufacturing capabilities and component library.
-JLCPCB’s minimum PCB order quantity is typically five units, with per‑unit cost decreasing at higher volumes. All fabrication files (Gerbers, drill data, CPL, and BOM) are provided in the project’s Releases section.
+JLCPCB’s minimum PCB order quantity is typically five units, with per‑unit cost decreasing at higher volumes. All fabrication files (Gerbers, drill data, CPL, and BOM) are provided in the project’s Releases section.  More information is available on [Release-R01.md](./Release-R01.md)
 Before ordering, review [testing.md](./testing.md) to understand the current feature set and known limitations.
 The assembly BOM includes only SMT components. All connectors are intended to be hand‑soldered. Multiple connector footprints are provided to support different configurations; not all will be required for every build, allowing maximum flexibility.
 

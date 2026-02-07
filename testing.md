@@ -18,10 +18,11 @@ B2601-R01 is the first proto board assembled by JLCPCB.com  I am currently testi
 
 **[✔️] RP2350 Debug Port:** Running on VS Code
 Pico Probe using -Cortex Debug:
-**J12**
-pin3 SWD Blue or Yellow
-Pin2 GND Black
-Pin1 SWCLK Green or Orange
+![Board](img/debugger.webp)
+**SWD J12**  
+Pin1 SWCLK Green or Orange  
+Pin2 GND Black  
+pin3 SWD Blue or Yellow  
 
 **[✔️] FPGA Debug Port:** J1 connected to HW-USBN-2A Lattice Diamond Software V3.14.0.75.2.  Note: Prog pin must be set to
 high Z on RP2350.  Done...
